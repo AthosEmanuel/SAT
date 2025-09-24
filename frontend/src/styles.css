@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+/* === Fontes globais === */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+
+/* === Reset básico === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Estilo global === */
+html,
+body {
+  height: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* fundo escuro elegante */
+  color: #f1f5f9; /* texto claro */
+  font-family: 'Open Sans', sans-serif; /* texto padrão */
+  line-height: 1.6;
+}
+
+.appContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05); /* leve transparência */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* === Títulos === */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif; /* fonte especial */
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #38bdf8; /* azul neon */
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* === Texto padrão === */
+p,
+span,
+li,
+td,
+th {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+/* === Botões === */
+button {
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+button {
+  background-color: yellow;
+}
+
+/* === Tabela === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  .homeContainer {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

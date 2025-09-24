@@ -1,0 +1,14 @@
+# Backend (Spring Boot / Java)
+backend/target/
+backend/.idea/
+backend/*.iml
+
+# Frontend (Angular / Node)
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.vscode/
+
+# IDEs e sistema
+*.log
+*.DS_Store

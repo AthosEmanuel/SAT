@@ -1,0 +1,15 @@
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th *ngFor="let col of columns">{{ col }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let col of columns">
+        <button *ngIf="col === 'comprar'" (click)="onComprar(row)">Comprar</button>
+        <span *ngIf="col !== 'comprar'">{{ row[col] }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>

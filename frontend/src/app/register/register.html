@@ -1,0 +1,21 @@
+<div class="register-container">
+  <h2>Cadastrar</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input id="nome" type="name" formControlName="nome" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" />
+    </div>
+
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input id="senha" type="password" formControlName="senha" />
+    </div>
+
+    <button type="submit" (click)="onBack()">Voltar</button>
+    <button type="button" (click)="onRegister()">Cadastrar</button>
+  </form>
+</div>

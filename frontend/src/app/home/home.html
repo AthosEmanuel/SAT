@@ -1,0 +1,6 @@
+<div class="appContainer">
+  <h1>Lista de Produtos</h1>
+  <button (click)="onMyOrders()">Meus Pedidos</button>
+
+  <app-table [columns]="columns" [data]="data" (comprar)="comprarProduto($event)"> </app-table>
+</div>
